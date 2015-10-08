@@ -3,23 +3,23 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Home' });
 });
 
 router.get('/about', function(req, res, next) {
-  res.render('about');
+  res.render('about', {title: 'About'});
 });
 
 router.get('/projects', function(req, res, next) {
-  res.render('projects');
+  res.render('projects', {title:'Projects'});
 });
 
 router.get('/contact', function(req, res, next) {
-  res.render('contact');
+  res.render('contact', {title:'Contact'});
 });
 
 router.get('/services', function(req, res, next) {
-  res.render('services');
+  res.render('services', {title: 'Services'});
 });
 
 
